@@ -1,6 +1,7 @@
 ;; set command and mac key to meta
 (setq mac-option-modifier 'meta)
 (setq mac-command-modifier 'meta)
+
 (global-set-key (kbd "C-s") 'isearch-forward)
 (global-set-key (kbd "M-n") 'forward-paragraph)
 (global-set-key (kbd "M-p") 'backward-paragraph)
@@ -20,8 +21,13 @@
 (global-set-key (kbd "S-<left>") 'windmove-swap-states-left)
 (global-set-key (kbd "S-<up>") 'windmove-swap-states-up)
 (global-set-key (kbd "S-<down>") 'windmove-swap-states-down)
-(global-unset-key (kbd "C-<triple-wheel-down>"))
+
+(global-unset-key (kbd "C-<wheel-up>"))
+(global-unset-key (kbd "C-<wheel-left>"))
+(global-unset-key (kbd "C-<wheel-right>"))
+(global-unset-key (kbd "C-<wheel-down>"))
 (global-unset-key (kbd "C-<triple-wheel-up>"))
+(global-unset-key (kbd "C-<triple-wheel-down>"))
 
 ;; allow insert of hash with right alt on mac os x uk keyboard
 (global-set-key (kbd "M-3")
