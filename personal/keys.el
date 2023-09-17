@@ -16,6 +16,7 @@
 (global-set-key (kbd "M-m f r") 'counsel-recentf)
 (global-set-key (kbd "M-m p f") 'counsel-projectile-find-file)
 (global-set-key (kbd "M-m s g p") 'counsel-projectile-git-grep)
+(global-set-key (kbd "M-y") 'counsel-yank-pop)
 
 (global-set-key (kbd "S-<right>") 'windmove-swap-states-right)
 (global-set-key (kbd "S-<left>") 'windmove-swap-states-left)

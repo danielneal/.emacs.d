@@ -1,5 +1,6 @@
 /auto-save-list/
 /recentf
 /straight/
-/.emacs.d/undo
+/undo/
+/saves/
 *.el
