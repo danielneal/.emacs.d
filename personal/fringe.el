@@ -1,1 +1,1 @@
-(fringe-mode '(8 . 0))
+(fringe-mode 0)

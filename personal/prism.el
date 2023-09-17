@@ -1,14 +1,13 @@
 (straight-use-package 'prism)
 (straight-use-package 'color)
 (straight-use-package 'rainbow-mode)
-(rainbow-mode)
 
 (add-hook
  'prism-mode-hook
  (lambda ()
    (prism-set-colors
-     :num 8
-     :desaturations '(0)
+     :num 16
+     :desaturations '(0 20)
      :colors '("#BF3F3F"
                "#BF6F3F"
                "#EFEF3F"
@@ -20,4 +19,5 @@
      :comments-fn (lambda (color)
                     "#BBBBBB")
      :strings-fn (lambda (color)
-                   "#DDDDDD"))))
+                   "#DDDDDD"))
+   (rainbow-mode)))
