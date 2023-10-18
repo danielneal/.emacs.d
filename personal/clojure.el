@@ -1,14 +1,17 @@
 (straight-use-package 'clojure-mode)
 (straight-use-package 'cider)
 (straight-use-package 'flycheck-joker)
+(straight-use-package 'clj-refactor)
 
 (add-hook 'clojure-mode-hook
           #'(lambda ()
               (flycheck-mode t)
               (show-paren-mode t)
+	      (clj-refactor-mode t)
 	      (paredit-mode)
-              (setq clojure-indent-style 'always-align)
-              (prism-mode)
+              (setq clojure-indent-style 'always-align
+		    tab-always-indent 'complete)
+	      (prism-mode)
               (set-face-attribute 'cider-debug-prompt-face nil
                                   :foreground "#FF00FF")
               (set-face-attribute 'cider-debug-code-overlay-face nil

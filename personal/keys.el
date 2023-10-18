@@ -27,10 +27,27 @@
 (global-unset-key (kbd "C-<wheel-left>"))
 (global-unset-key (kbd "C-<wheel-right>"))
 (global-unset-key (kbd "C-<wheel-down>"))
+(global-unset-key (kbd "C-<triple-wheel-left>"))
+(global-unset-key (kbd "C-<triple-wheel-right>"))
 (global-unset-key (kbd "C-<triple-wheel-up>"))
 (global-unset-key (kbd "C-<triple-wheel-down>"))
+(global-unset-key (kbd "<triple-wheel-left>"))
+(global-unset-key (kbd "<triple-wheel-right>"))
+
+;; Prevent "No comment syntax defined by disabling comment-line"
+(global-unset-key (kbd "C-x C-;"))
 
 ;; allow insert of hash with right alt on mac os x uk keyboard
 (global-set-key (kbd "M-3")
                 '(lambda () (interactive) (insert "#")))
+
+;; Hydras
+(global-set-key (kbd "C-c c") 'hydra-cider/body)
+
+(glo)
+
+;; Point history
+(global-set-key (kbd "C-c p") 'point-history-show)
+
+
 

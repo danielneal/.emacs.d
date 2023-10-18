@@ -1,4 +1,4 @@
-(straight-use-package 'prism)
+(straight-use-package '(prism :host github :repo "alphapapa/prism.el" :branch "fix/26-infinite-loop"))
 (straight-use-package 'color)
 (straight-use-package 'rainbow-mode)
 

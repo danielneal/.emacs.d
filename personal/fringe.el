@@ -1,1 +1,1 @@
-(fringe-mode 0)
+(fringe-mode '(1 . 0))
