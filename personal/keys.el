@@ -44,8 +44,6 @@
 ;; Hydras
 (global-set-key (kbd "C-c c") 'hydra-cider/body)
 
-(glo)
-
 ;; Point history
 (global-set-key (kbd "C-c p") 'point-history-show)
 

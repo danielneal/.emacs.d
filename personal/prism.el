@@ -6,8 +6,8 @@
  'prism-mode-hook
  (lambda ()
    (prism-set-colors
-     :num 16
-     :desaturations '(0 20)
+     :num 24
+     :desaturations '(0 10 20)
      :colors '("#BF3F3F"
                "#BF6F3F"
                "#EFEF3F"
