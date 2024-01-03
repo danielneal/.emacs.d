@@ -47,5 +47,7 @@
 ;; Point history
 (global-set-key (kbd "C-c p") 'point-history-show)
 
-
-
+;; Clojure mode 
+(add-hook 'clojure-mode-hook
+	  (lambda ()
+            (define-key clojure-mode-map (kbd "C-c M-i") 'cider-inspect-last-sexp)))

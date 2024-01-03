@@ -10,7 +10,10 @@
 	      (clj-refactor-mode t)
 	      (paredit-mode)
               (setq clojure-indent-style 'always-align
-		    tab-always-indent 'complete)
+		    tab-always-indent 'complete
+		    cider-print-fn 'puget
+		    cider-print-quota (* 1024 512) ; 512kb
+		    cider-pprint-options '(("width" 120)))
 	      (prism-mode)
               (set-face-attribute 'cider-debug-prompt-face nil
                                   :foreground "#FF00FF")
