@@ -1,0 +1,2 @@
+(winner-mode 1)
+

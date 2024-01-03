@@ -1,0 +1,1 @@
+(straight-use-package 'palette)
