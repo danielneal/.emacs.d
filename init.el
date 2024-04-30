@@ -32,5 +32,5 @@
         (insert (mapconcat 'identity (nreverse errors) "\n"))
         (pop-to-buffer error-buffer)))))
 
-(load-directory "/users/danielneal/.emacs.d/personal")
+(load-directory "~/.emacs.d/personal")
 
