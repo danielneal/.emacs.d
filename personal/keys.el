@@ -51,3 +51,6 @@
 (add-hook 'clojure-mode-hook
 	  (lambda ()
             (define-key clojure-mode-map (kbd "C-c M-i") 'cider-inspect-last-sexp)))
+
+;;
+(global-set-key (kbd "C-c b") 'new-buffer)

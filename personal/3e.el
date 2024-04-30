@@ -6,7 +6,7 @@
 
 (defun cider-jack-in-sqa (params)
   (interactive "P")
-  (let ((cider-clojure-cli-global-options "-A:dev:profile:test:clj-refactor"))
+  (let ((cider-clojure-cli-global-options "-A:dev:profile:test:clj-refactor:releases"))
     (cider-jack-in-clj params)))
 
 (defun cider-jack-in-figwheel (params)
