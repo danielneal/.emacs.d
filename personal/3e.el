@@ -6,7 +6,7 @@
 
 (defun cider-jack-in-sqa (params)
   (interactive "P")
-  (let ((cider-clojure-cli-global-options "-A:dev:profile:test:clj-refactor:releases"))
+  (let ((cider-clojure-cli-global-options "-A:dev:profile:test:clj-refactor:miracle-save:releases"))
     (cider-jack-in-clj params)))
 
 (defun cider-jack-in-figwheel (params)
@@ -15,3 +15,8 @@
     (cider-jack-in-cljs params)))
 
 (setq whitespace-line-column 90)
+
+(defun launch-flow-storm ()
+  (cider-interactive-eval
+   "(do (require '[flow-storm.api :as fs-api])
+        (fs-api/local-connect))"))

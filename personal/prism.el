@@ -1,4 +1,4 @@
-(straight-use-package '(prism :host github :repo "alphapapa/prism.el" :branch "fix/26-infinite-loop"))
+(straight-use-package '(prism :host github :repo "alphapapa/prism.el"))
 (straight-use-package 'color)
 (straight-use-package 'rainbow-mode)
 
@@ -8,16 +8,14 @@
    (prism-set-colors
      :num 24
      :desaturations '(0 10 20)
-     :colors '("#BF3F3F"
-               "#BF6F3F"
-               "#EFEF3F"
-               "#6FBF6F"
-               "#3FBFBF"
-               "#3F6FBF"
-               "#6F3FBF"
-	       "#BF6F9F")
+     :colors '("#FF8888"
+               "#FFFF88"
+               "#88FF88"
+               "#88FFFF"
+	       "#8888FF"
+               "#FF88FF")
      :comments-fn (lambda (color)
-                    "#BBBBBB")
+                    "#AAAAAA")
      :strings-fn (lambda (color)
-                   "#DDDDDD"))
+		   "#FFFFFF"))
    (rainbow-mode)))

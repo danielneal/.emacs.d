@@ -1,1 +1,1 @@
-(straight-use-package 'csv-mode)
+(use-package csv-mode)

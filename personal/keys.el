@@ -23,6 +23,7 @@
 (global-set-key (kbd "S-<up>") 'windmove-swap-states-up)
 (global-set-key (kbd "S-<down>") 'windmove-swap-states-down)
 
+;;; remove the zoom in zoom out accidentsn
 (global-unset-key (kbd "C-<wheel-up>"))
 (global-unset-key (kbd "C-<wheel-left>"))
 (global-unset-key (kbd "C-<wheel-right>"))
@@ -39,7 +40,7 @@
 
 ;; allow insert of hash with right alt on mac os x uk keyboard
 (global-set-key (kbd "M-3")
-                '(lambda () (interactive) (insert "#")))
+                (lambda () (interactive) (insert "#")))
 
 ;; Hydras
 (global-set-key (kbd "C-c c") 'hydra-cider/body)
@@ -52,5 +53,23 @@
 	  (lambda ()
             (define-key clojure-mode-map (kbd "C-c M-i") 'cider-inspect-last-sexp)))
 
-;;
+
 (global-set-key (kbd "C-c b") 'new-buffer)
+
+;; Treemacs
+(global-set-key (kbd "C-c t") (lambda ()
+				(interactive)
+				(treemacs)
+				(treemacs--do-follow-project)))
+
+(global-set-key (kbd "C-c r") (lambda ()
+				(interactive)
+				(refresh-treemacs-icons)))
+
+(global-set-key (kbd "C-c f") (lambda ()
+				(interactive)
+				(treemacs--do-follow-project)))
+
+(global-set-key (kbd "C-x v") 'vundo)
+
+

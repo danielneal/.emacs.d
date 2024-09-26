@@ -1,1 +1,1 @@
-(straight-use-package 'git-timemachine)
+(use-package git-timemachine)
