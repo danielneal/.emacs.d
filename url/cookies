@@ -1,0 +1,17 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ 'nil)
+(setq url-cookie-secure-storage
+ '(("3esynaptiq.com"
+  [url-cookie "sqa" "eyJhbGciOiJIUzI1NiJ9.eyJjbGFpbXMiOiJ7OnNxaWQgXCIvc3EvYWN0b3IvZGVtby8zZWRlbW9cIiwgOmF1dGhvcml6YXRpb25zIChcImQ4YTk2MmI0LTU5ODAtNDA2MC04MjYzLTQzMGQwODY4ZDgwMVwiKSwgOnJlZnJlc2gtYnkgI3RpbWUvaW5zdGFudCBcIjIwMjQtMDItMTdUMTU6MDM6MzMuNjk4WlwiLCA6cm9sZXMgI3s6YWRtaW4gOnVzZXJ9LCA6bGVvLXVpZCA0MTMsIDp1c2VyLWlkIDI0NTQsIDplbnYgXCJwX2xlbzAxXCIsIDpjaGVjay1wYXNzd29yZC1leHBpcmF0aW9uIHRydWUsIDpjb250cmFjdC11dWlkIFwiQ09OVGRlbW9fMVwiLCA6cmVmcmVzaC1hZnRlciAjdGltZS9pbnN0YW50IFwiMjAyNC0wMi0xN1QxNDo1MzozMy42OThaXCIsIDppc3N1ZWQgI3RpbWUvaW5zdGFudCBcIjIwMjQtMDItMTJUMTQ6NTM6MzMuNjk4WlwiLCA6Zmlyc3QtaXNzdWVkICN0aW1lL2luc3RhbnQgXCIyMDI0LTAyLTEyVDE0OjUzOjMzLjY5OFpcIiwgOnNxby1rZXkgOnNwLXNxbzAxLCA6dmVyc2lvbiBcIjEuMTBcIiwgOmxlby1zaWQgXCJTUUE6MzI0Y2JjYzE4MmFiNGRmZDViMjYyNzhhODI4ZDk1OThcIiwgOnVzZXIgXCIzZWRlbW9cIiwgOnRlY2hub2xvZ2llcyAjezpzb2xhciA6c3RvcmFnZX19In0.FZJX16sbr438qtLbJ45jee1rrCWrMfdpYcFjW4_OcmI" "Tue Feb 13 14:53:33 2024 GMT" "/sq-product-doc" "3esynaptiq.com" t]))
+)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; coding: utf-8-emacs-unix
+;; End:
+
+;;; cookies ends here
