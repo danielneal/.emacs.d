@@ -15,7 +15,7 @@
 	       "#8888FF"
                "#FF88FF")
      :comments-fn (lambda (color)
-                    "#AAAAAA")
+                    "#E6E4D9")
      :strings-fn (lambda (color)
-		   "#FFFFFF"))
+		   "#F2F0E5"))
    (rainbow-mode)))

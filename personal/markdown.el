@@ -23,5 +23,4 @@
 
 	    (olivetti-mode)))
 
-
 (markdown-toggle-inline-images)

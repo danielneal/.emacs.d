@@ -6,6 +6,11 @@
 (setq black "#000000")
 
 (set-face-attribute 
+ 'default nil
+ :family "menlo"
+ :height 96)
+
+(set-face-attribute 
  'font-lock-doc-face nil
  :foreground white)
 
