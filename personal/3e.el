@@ -7,7 +7,7 @@
 
 (defun cider-jack-in-sqa (params)
   (interactive "P")
-  (let ((cider-clojure-cli-global-options "-A:dev:test:miracle-save:profile:releases"))
+  (let ((cider-clojure-cli-global-options "-A:dev:test:miracle-save:portal:profile:releases"))
     (cider-jack-in-clj params)))
 
 (defun cider-reload-sqa (params)
@@ -22,13 +22,17 @@
   (interactive "P")
   (cider-interactive-eval "(do (in-ns 'user) (reset))"))
 
+(defun open-portal (yparams)
+  (interactive "P")
+  (cider-interactive-eval "(do (require '[portal.api :as portal]) (portal/open) (add-tap #'portal/submit))"))
+
 (defun cider-start-sqa (params)
   (interactive "P")
   (setq cider-log-framework-name "Logback")
   (cider-log-show)
   (cider-interactive-eval "(do (in-ns 'user) (user/go))"))
 
-(defun cider-jack-in-figwheel (params)
+(defun cider-jack-in-sqa-common (params)
   (interactive "P")
   (let ((cider-clojure-cli-global-options "-A:sqa-common-cljs:sqa-common-demo:sqa-common-demo-repl"))
     (cider-jack-in-cljs params)))
@@ -39,3 +43,6 @@
   (cider-interactive-eval
    "(do (require '[flow-storm.api :as fs-api])
         (fs-api/local-connect))"))
+
+
+

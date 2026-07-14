@@ -1,6 +1,12 @@
+;; I use prism for a rainbow colored lisp and clojure
+
 (straight-use-package '(prism :host github :repo "alphapapa/prism.el"))
-(straight-use-package 'color)
-(straight-use-package 'rainbow-mode)
+
+(use-package color
+  :straight t)
+
+(use-package rainbow-mode
+  :straight t)
 
 (add-hook
  'prism-mode-hook
@@ -8,14 +14,16 @@
    (prism-set-colors
      :num 24
      :desaturations '(0 10 20)
-     :colors '("#FF8888"
-               "#FFFF88"
-               "#88FF88"
-               "#88FFFF"
-	       "#8888FF"
-               "#FF88FF")
+     :colors '("#FFAAAA"
+               "#FFFFAA"
+               "#AAFFAA"
+               "#AAFFFF"
+	       "#AAAAFF"
+               "#FFAAFF")
      :comments-fn (lambda (color)
                     "#E6E4D9")
      :strings-fn (lambda (color)
 		   "#F2F0E5"))
    (rainbow-mode)))
+
+

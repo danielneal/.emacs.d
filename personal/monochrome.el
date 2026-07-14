@@ -1,4 +1,8 @@
-(straight-use-package 'quasi-monochrome-theme)
+;; I use quasi-monochroms as my base theme, it puts most things in black and white
+
+(use-package quasi-monochrome-theme
+  :straight t)
+
 (load-theme 'quasi-monochrome t)
 
 (setq white "#FFFFFF")

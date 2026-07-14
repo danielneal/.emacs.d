@@ -1,5 +1,10 @@
-(straight-use-package 'polymode)
-(straight-use-package 'poly-markdown)
+;; I use polymode to mix markdown and other languages
+
+(use-package polymode
+  :straight t)
+
+(use-package poly-markdown
+  :straight t)
 
 (define-hostmode poly-clojure-hostmode
   :mode 'clojure-mode)

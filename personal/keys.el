@@ -46,6 +46,7 @@
 ;; Hydras
 (global-set-key (kbd "C-c c") 'hydra-cider/body)
 (global-set-key (kbd "C-c g") 'hydra-git/body)
+(global-set-key (kbd "C-c n") 'hydra-narrow/body)
 
 ;; Clojure mode
 (define-key input-decode-map (kbd "C-i") (kbd "H-i"))
@@ -76,16 +77,13 @@
 (global-set-key (kbd "C-c z") 'reveal-in-osx-finder)
 
 
-
 (define-key ivy-occur-mode-map (kbd "p") 'ivy-occur-previous-line)
 (define-key ivy-occur-mode-map (kbd "n") 'ivy-occur-next-line)
-
 
 ;; 
 (define-key abc-mode-map (kbd "C-c C-c")
 	    (lambda ()
 	      (interactive)
 	      (abc-generate-ps)))
-
 
 ;;; remove the zoom in zoom out accidentsn

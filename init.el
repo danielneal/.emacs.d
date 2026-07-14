@@ -52,7 +52,10 @@
 	("mfor"
 	 (("block" 1)))))
       ("alias-map"
-       (("hooks" "helix.hooks")))))))
+       (("hooks" "helix.hooks"))))))
+ '(safe-local-variable-values
+   '((cider-connect-default-cljs-params :host "localhost" :port 7888)
+     (cider-connect-default-params :host "localhost" :port 7889))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
